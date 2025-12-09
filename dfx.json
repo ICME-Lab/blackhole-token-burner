@@ -1,19 +1,9 @@
 {
   "canisters": {
-    "blackhole-token-burner-backend": {
-      "candid": "src/blackhole-token-burner-backend/blackhole-token-burner-backend.did",
-      "package": "blackhole-token-burner-backend",
+    "blackhole-token-burner": {
+      "candid": "src/blackhole-token-burner/service.did",
+      "package": "blackhole-token-burner",
       "type": "rust"
-    },
-    "blackhole-token-burner-frontend": {
-      "dependencies": [
-        "blackhole-token-burner-backend"
-      ],
-      "source": [
-        "src/blackhole-token-burner-frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "blackhole-token-burner-frontend"
     }
   },
   "defaults": {

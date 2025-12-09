@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "src/blackhole-token-burner-backend"
+    "src/blackhole-token-burner"
 ]
 resolver = "2"
