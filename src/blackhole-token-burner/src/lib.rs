@@ -11,7 +11,7 @@ const LEDGER: Principal =
     Principal::from_slice(&[0x00, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x25, 0x01, 0x01]);
 
 #[ic_cdk::query]
-fn greet() -> String {
+fn info() -> String {
     format!("minter: {}, ledger: {}", MINTER.to_text(), LEDGER.to_text())
 }
 

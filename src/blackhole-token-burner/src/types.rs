@@ -1,5 +1,4 @@
 use candid::{CandidType, Nat, Principal};
-use ic_cdk::call::CandidDecodeFailed;
 use serde::{Deserialize, Serialize};
 
 pub type Tokens = Nat;
@@ -49,11 +48,6 @@ pub struct BadBurn {
 #[derive(CandidType, Deserialize, Clone, Debug, Serialize)]
 pub struct InsufficientFunds {
     pub balance: Tokens,
-}
-
-#[derive(CandidType, Deserialize, Clone, Debug, Serialize)]
-pub struct InsufficientAllowance {
-    pub allowance: Tokens,
 }
 
 #[derive(CandidType, Deserialize, Clone, Debug, Serialize)]
